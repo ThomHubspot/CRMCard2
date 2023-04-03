@@ -275,18 +275,17 @@ const tileTwo = {
 	 const tileThree = {
     "type": "tile",
     "content": [
-      // example progress bar component
   {
     "type": "heading",
-    "text": "Products purchased in last month"
+    "text": "tableau d'avancement"
   },
   {
     "type": "progressBar",
     "variant": "success",
     "valueMax": 150,
     "value": 50,
-    "title": "T-shirts",
-    "valueDescription": "50 out of 150",
+    "title": "Séléction du document",
+    "valueDescription": "90 out of 150",
     "showPercentage": true
   },
   {
@@ -294,8 +293,8 @@ const tileTwo = {
     "variant": "warning",
     "valueMax": 100,
     "value": 20,
-    "title": "Bottles",
-    "valueDescription": "20 out of 100",
+    "title": "Lécture du document",
+    "valueDescription": "45 out of 100",
     "showPercentage": true
   },
   {
@@ -303,8 +302,35 @@ const tileTwo = {
     "variant": "danger",
     "valueMax": 150,
     "value": 10,
-    "title": "Stickers",
+    "title": "Signiture",
     "valueDescription": "10 out of 150",
+    "showPercentage": true
+  },
+	    {
+    "type": "progressBar",
+    "variant": "danger",
+    "valueMax": 150,
+    "value": 10,
+    "title": "Réception du code de sécurité par SMS",
+    "valueDescription": "150 out of 150",
+    "showPercentage": true
+  },
+	    {
+    "type": "progressBar",
+    "variant": "danger",
+    "valueMax": 150,
+    "value": 10,
+    "title": "Saisie du code",
+    "valueDescription": "0 out of 150",
+    "showPercentage": true
+  },
+	        {
+    "type": "progressBar",
+    "variant": "danger",
+    "valueMax": 150,
+    "value": 10,
+    "title": "Document signé",
+    "valueDescription": "0 out of 150",
     "showPercentage": true
   }
 	     ]
