@@ -22,6 +22,10 @@ exports.main = async (context = {}, sendResponse) => {
     "valueDescription": "35 of 150",
     "showPercentage": true
   },
+	    {
+	    "type": "crm::report",
+	    "reportId": 93176747
+		     }
 			{
 				"type": "button",
 				"text": "Actualiser",
