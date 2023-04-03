@@ -80,7 +80,7 @@ const tileTwo = {
 			{
 				"type": "tag",
 				"text": "Validé",
-				"variant": "Success"
+				"variant": "success"
 			},
 			{
 				"type": "buttonRow",
@@ -227,7 +227,6 @@ const tileTwo = {
 				]
 			}
 		]
-	}
   };	
 			
   try {
