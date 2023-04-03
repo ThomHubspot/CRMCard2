@@ -121,7 +121,7 @@ exports.main = async (context = {}, sendResponse) => {
 						"text": "Redirect to link"
 					}
 				]
-			}
+			},
 		]
   };
 
