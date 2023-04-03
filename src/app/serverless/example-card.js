@@ -88,7 +88,7 @@ exports.main = async (context = {}, sendResponse) => {
 						}
 					}
 				]
-			},
+			};
 
   try {
     const { data } = await axios.get("https://zenquotes.io/api/random");
