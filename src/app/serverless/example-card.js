@@ -79,7 +79,7 @@ const tileTwo = {
 			},
 			{
 				"type": "tag",
-				"text": "Medical ID Expired",
+				"text": "Vérification visuelle pas encore validée",
 				"variant": "error"
 			},
 			{
@@ -88,11 +88,97 @@ const tileTwo = {
 					{
 						"type": "button",
 						"variant": "primary",
-						"text": "Visualise document"
+						"text": "Visualiser le document"
 					},
 					{
 						"type": "button",
-						"text": "Go to link",
+						"text": "Ajouter/Modifier/effacer",
+						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
+					}
+				]
+			},
+			{
+				"type": "descriptionList",
+				"items": [
+					{
+						"label": "Carte nationale d’identité ou Titre de sejour",
+						"value": {
+							"type": "text",
+							"format": "markdown",
+							"text": "Ajouté le 01/02/2023"
+						}
+					}
+				]
+			},
+			{
+				"type": "image",
+				"src": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
+				"alt": "HubSpot logo",
+				"width": 100,
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "my-custom-function"
+				}
+			},
+			{
+				"type": "tag",
+				"text": "Vérification visuelle pas encore validée",
+				"variant": "error"
+			},
+			{
+				"type": "buttonRow",
+				"buttons": [
+					{
+						"type": "button",
+						"variant": "primary",
+						"text": "Visualiser le document"
+					},
+					{
+						"type": "button",
+						"text": "Ajouter/Modifier/effacer",
+						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
+					}
+				]
+			},
+			{
+				"type": "descriptionList",
+				"items": [
+					{
+						"label": "Carte nationale d’identité ou Titre de sejour",
+						"value": {
+							"type": "text",
+							"format": "markdown",
+							"text": "Ajouté le 01/02/2023"
+						}
+					}
+				]
+			},
+			{
+				"type": "image",
+				"src": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
+				"alt": "HubSpot logo",
+				"width": 100,
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "my-custom-function"
+				}
+			},
+			{
+				"type": "tag",
+				"text": "Vérification visuelle pas encore validée",
+				"variant": "error"
+			},
+			{
+				"type": "buttonRow",
+				"buttons": [
+					{
+						"type": "button",
+						"variant": "primary",
+						"text": "Visualiser le document"
+					},
+					{
+						"type": "button",
+						"text": "Ajouter/Modifier/effacer",
 						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
 					}
 				]
