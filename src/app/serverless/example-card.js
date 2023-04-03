@@ -58,11 +58,10 @@ const tileTwo = {
 				"type": "descriptionList",
 				"items": [
 					{
-						"label": "Medical ID",
+						"label": "Carte nationale d’identité ou Titre de sejour",
 						"value": {
 							"type": "text",
-							"format": "markdown",
-							"text": ""
+							"format": "markdown"
 						}
 					}
 				]
