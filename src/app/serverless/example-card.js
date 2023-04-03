@@ -58,7 +58,7 @@ const tileTwo = {
 				"type": "descriptionList",
 				"items": [
 					{
-						"label": "Carte nationale d’identité ou Titre de sejour",
+						"label": "Cerfa 15312 03 - Activitiés Immobilièrs",
 						"value": {
 							"type": "text",
 							"format": "markdown",
@@ -101,7 +101,7 @@ const tileTwo = {
 				"type": "descriptionList",
 				"items": [
 					{
-						"label": "Carte nationale d’identité ou Titre de sejour",
+						"label": "Cerfa 15312 03",
 						"value": {
 							"type": "text",
 							"format": "markdown",
@@ -112,8 +112,8 @@ const tileTwo = {
 			},
 			{
 				"type": "image",
-				"src": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
-				"alt": "HubSpot logo",
+				"src": "https://docplayer.fr/docs-images/41/2937820/images/page_6.jpg",
+				"alt": "Cerfa 15312 03",
 				"width": 100,
 				"onClick": {
 					"type": "SERVERLESS_ACTION_HOOK",
@@ -122,8 +122,8 @@ const tileTwo = {
 			},
 			{
 				"type": "tag",
-				"text": "Vérification visuelle pas encore validée",
-				"variant": "error"
+				"text": "Validé",
+				"variant": "success"
 			},
 			{
 				"type": "buttonRow",
@@ -136,7 +136,7 @@ const tileTwo = {
 					{
 						"type": "button",
 						"text": "Ajouter/Modifier/effacer",
-						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
+						"href": "https://docplayer.fr/docs-images/41/2937820/images/page_6.jpg"
 					}
 				]
 			},
@@ -155,7 +155,7 @@ const tileTwo = {
 			},
 			{
 				"type": "image",
-				"src": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
+				"src": "https://www.labarredemonts-fromentine.fr/wp-content/uploads/2019/05/carte-identite-1200x630.jpg",
 				"alt": "HubSpot logo",
 				"width": 100,
 				"onClick": {
@@ -179,7 +179,7 @@ const tileTwo = {
 					{
 						"type": "button",
 						"text": "Ajouter/Modifier/effacer",
-						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
+						"href": "https://www.labarredemonts-fromentine.fr/wp-content/uploads/2019/05/carte-identite-1200x630.jpg"
 					}
 				]
 			},
@@ -187,7 +187,7 @@ const tileTwo = {
 				"type": "descriptionList",
 				"items": [
 					{
-						"label": "Carte nationale d’identité ou Titre de sejour",
+						"label": "Bulletin de salaire",
 						"value": {
 							"type": "text",
 							"format": "markdown",
@@ -198,7 +198,7 @@ const tileTwo = {
 			},
 			{
 				"type": "image",
-				"src": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
+				"src": "https://lvexpertisex3.com/x3help/FRA/OBJ/BULCALT_cadre_av.png",
 				"alt": "HubSpot logo",
 				"width": 100,
 				"onClick": {
@@ -208,8 +208,8 @@ const tileTwo = {
 			},
 			{
 				"type": "tag",
-				"text": "Vérification visuelle pas encore validée",
-				"variant": "error"
+				"text": "en cours de vérification",
+				"variant": "warning"
 			},
 			{
 				"type": "buttonRow",
@@ -222,7 +222,7 @@ const tileTwo = {
 					{
 						"type": "button",
 						"text": "Ajouter/Modifier/effacer",
-						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
+						"href": "https://lvexpertisex3.com/x3help/FRA/OBJ/BULCALT_cadre_av.png"
 					}
 				]
 			}
