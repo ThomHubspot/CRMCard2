@@ -268,39 +268,7 @@ const tileTwo = {
 						"href": "https://www.campus26.com/wp-content/uploads/2020/09/Agents_Immobiliers_-_Formation_Loi_Alur_de_1h_a_42h-1.pdf"
 					}
 				]
-			},
-			// example progress bar component
-  {
-    "type": "heading",
-    "text": "Products purchased in last month"
-  },
-  {
-    "type": "progressBar",
-    "variant": "success",
-    "valueMax": 150,
-    "value": 50,
-    "title": "T-shirts",
-    "valueDescription": "50 out of 150",
-    "showPercentage": true
-  },
-  {
-    "type": "progressBar",
-    "variant": "warning",
-    "valueMax": 100,
-    "value": 20,
-    "title": "Bottles",
-    "valueDescription": "20 out of 100",
-    "showPercentage": true
-  },
-  {
-    "type": "progressBar",
-    "variant": "danger",
-    "valueMax": 150,
-    "value": 10,
-    "title": "Stickers",
-    "valueDescription": "10 out of 150",
-    "showPercentage": true
-  }
+			}
 		]
   };	
 			
