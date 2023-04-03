@@ -14,7 +14,7 @@ exports.main = async (context = {}, sendResponse) => {
       },
       {
 				"type": "alert",
-				"title": "Alert: something you should be aware of",
+				"title": "Alert: confidential information. Not to be shared",
 				"variant": "error",
 				"body": {
 					"type": "text",
@@ -118,11 +118,18 @@ const tileTwo = {
 						"type": "button",
 						"variant": "primary",
 						"text": "Visualise document",
-						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
+						"actions": [
+        {
+          "type": "IFRAME",
+          "width": 890,
+          "height": 748,
+          "uri": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
+        }
 					},
 					{
 						"type": "button",
-						"text": "Go to link"
+						"text": "Go to link",
+						"href": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
 					}
 				]
 			}
