@@ -67,6 +67,66 @@ exports.main = async (context = {}, sendResponse) => {
   };
    
 	
+const tileTwo = {
+    "type": "tile",
+    "content": [
+      {
+        "type": "heading",
+        "text": "Medical Data"
+      },
+      {
+				"type": "alert",
+				"title": "Alert: something you should be aware of",
+				"variant": "error",
+				"body": {
+					"type": "text",
+					"text": "click on the following url to either view or redirected to the document"
+				}
+			},
+			{
+				"type": "divider",
+				"distance": "small"
+			},
+			{
+				"type": "descriptionList",
+				"items": [
+					{
+						"label": "Doctor Name:",
+						"value": "John Doctor"
+					},
+					{
+						"label": "Address:",
+						"value": "Cambridge, 25 First St 2nd Floor, United States"
+					},
+					{
+						"label": "Schedule:",
+						"value": {
+							"type": "text",
+							"format": "markdown",
+							"text": "[link to schedule](https://app.hubspot.com/l/docs/doc/platform/create-custom-crm-cards-with-projects#components)"
+						}
+					}
+				]
+			},
+			{
+				"type": "tag",
+				"text": "Waiting for validation",
+				"variant": "warning",
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "exampleFunction"
+				}
+			},
+			{
+				"type": "button",
+				"text": "Contact the doctor",
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "exampleFunction"
+				}
+			}
+	     ]
+  };	
 			
   try {
     const { data } = await axios.get("https://zenquotes.io/api/random");
@@ -103,7 +163,7 @@ exports.main = async (context = {}, sendResponse) => {
     ];
 
     sendResponse({
-      sections: [tileOne],
+      sections: [tileOne][tileTwo],
     });
   } catch (error) {
     // "message" will create an error feedback banner when it catches an error
@@ -112,7 +172,7 @@ exports.main = async (context = {}, sendResponse) => {
         type: "ERROR",
         body: `Error: ${error.message}`,
       },
-      sections: [tileOne],
+      sections: [tileOne][tileTwo],
     });
   }
 };
