@@ -8,11 +8,11 @@ exports.main = async (context = {}, sendResponse) => {
   const tileOne = {
     "type": "tile",
     "content": [
-      {
-        "type": "heading",
-        "text": "Medical Data"
-      },
-      {
+			{
+				"type": "heading",
+				"text": "Medical Data"
+			},
+			{
 				"type": "alert",
 				"title": "Alert: something you should be aware of",
 				"variant": "error",
@@ -63,7 +63,66 @@ exports.main = async (context = {}, sendResponse) => {
 					"serverlessFunction": "exampleFunction"
 				}
 			}
-    ]
+		]
+	},
+	{
+		"type": "tile",
+		"content": [
+			{
+				"type": "heading",
+				"text": "Documents"
+			},
+			{
+				"type": "divider",
+				"distance": "small"
+			},
+			{
+				"type": "descriptionList",
+				"items": [
+					{
+						"label": "Medical ID",
+						"value": {
+							"type": "text",
+							"format": "markdown",
+							"text": ""
+						}
+					}
+				]
+			},
+			{
+				"type": "image",
+				"src": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
+				"alt": "HubSpot logo",
+				"width": 100,
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "my-custom-function"
+				}
+			},
+			{
+				"type": "tag",
+				"text": "Medical ID",
+				"variant": "error",
+				"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "exampleFunction"
+				}
+			},
+			{
+				"type": "buttonRow",
+				"buttons": [
+					{
+						"type": "button",
+						"variant": "primary",
+						"text": "Open doc in iFrame"
+					},
+					{
+						"type": "button",
+						"text": "Redirect to link"
+					}
+				]
+			}
+		]
   };
 
   try {
