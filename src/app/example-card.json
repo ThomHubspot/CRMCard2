@@ -1,7 +1,7 @@
 {
   "type": "crm-card",
   "data": {
-    "title": "Example CRM Card",
+    "title": "Example CRM Card - Medical records",
     "location": "crm.record.tab",
     "fetch": {
       "targetFunction": "crm-card",
