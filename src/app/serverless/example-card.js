@@ -62,7 +62,9 @@ exports.main = async (context = {}, sendResponse) => {
 					"type": "SERVERLESS_ACTION_HOOK",
 					"serverlessFunction": "exampleFunction"
 				}
-			},
+			}
+	     ]
+  },
    
 	{
 		"type": "tile",
