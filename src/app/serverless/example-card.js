@@ -12,19 +12,7 @@ exports.main = async (context = {}, sendResponse) => {
         "type": "heading",
         "text": "Avancement"
       },
-      {
-				"type": "alert",
-				"title": "Alert: confidential information. Not to be shared",
-				"variant": "error",
-				"body": {
-					"type": "text",
-					"text": "click on the following url to either view or redirected to the document"
-				}
-			},
-			{
-				"type": "divider",
-				"distance": "small"
-			},
+   
 			{
     "type": "progressBar",
     "variant": "success",
@@ -61,6 +49,19 @@ const tileTwo = {
 			{
 				"type": "heading",
 				"text": "Documents"
+			},
+			   {
+				"type": "alert",
+				"title": "Alert: confidential information. Not to be shared",
+				"variant": "error",
+				"body": {
+					"type": "text",
+					"text": "click on the following url to either view or redirected to the document"
+				}
+			},
+			{
+				"type": "divider",
+				"distance": "small"
 			},
 			{
 				"type": "divider",
