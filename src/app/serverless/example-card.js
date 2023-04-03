@@ -10,7 +10,7 @@ exports.main = async (context = {}, sendResponse) => {
     "content": [
       {
         "type": "heading",
-        "text": "Medical Data"
+        "text": "Avancement"
       },
       {
 				"type": "alert",
@@ -26,26 +26,36 @@ exports.main = async (context = {}, sendResponse) => {
 				"distance": "small"
 			},
 			{
-				"type": "descriptionList",
-				"items": [
-					{
-						"label": "Doctor Name:",
-						"value": "John Doctor"
-					},
-					{
-						"label": "Address:",
-						"value": "Cambridge, 25 First St 2nd Floor, United States"
-					},
-					{
-						"label": "Schedule:",
-						"value": {
-							"type": "text",
-							"format": "markdown",
-							"text": "[link to schedule](https://app.hubspot.com/l/docs/doc/platform/create-custom-crm-cards-with-projects#components)"
-						}
-					}
-				]
-			},
+    "type": "heading",
+    "text": "Products purchased in last month"
+  },
+  {
+    "type": "progressBar",
+    "variant": "success",
+    "valueMax": 150,
+    "value": 50,
+    "title": "T-shirts",
+    "valueDescription": "50 out of 150",
+    "showPercentage": true
+  },
+  {
+    "type": "progressBar",
+    "variant": "warning",
+    "valueMax": 100,
+    "value": 20,
+    "title": "Bottles",
+    "valueDescription": "20 out of 100",
+    "showPercentage": true
+  },
+  {
+    "type": "progressBar",
+    "variant": "danger",
+    "valueMax": 150,
+    "value": 10,
+    "title": "Stickers",
+    "valueDescription": "10 out of 150",
+    "showPercentage": true
+  },
 			{
 				"type": "tag",
 				"text": "Waiting for validation",
@@ -68,7 +78,6 @@ exports.main = async (context = {}, sendResponse) => {
    
 	
 const tileTwo = {
-    "type": "tile",
     "type": "tile",
 		"content": [
 			{
