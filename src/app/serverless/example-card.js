@@ -163,7 +163,7 @@ const tileTwo = {
     ];
 
     sendResponse({
-      sections: [tileOne][tileTwo],
+      sections: [tileOne,tileTwo],
     });
   } catch (error) {
     // "message" will create an error feedback banner when it catches an error
@@ -172,7 +172,7 @@ const tileTwo = {
         type: "ERROR",
         body: `Error: ${error.message}`,
       },
-      sections: [tileOne][tileTwo],
+      sections: [tileOne,tileTwo],
     });
   }
 };
