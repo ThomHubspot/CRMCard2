@@ -104,7 +104,7 @@ const tileTwo = {
 			},
 			{
 				"type": "tag",
-				"text": "Medical ID",
+				"text": "Medical ID Expired",
 				"variant": "error",
 				"onClick": {
 					"type": "SERVERLESS_ACTION_HOOK",
