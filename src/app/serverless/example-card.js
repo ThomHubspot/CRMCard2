@@ -43,11 +43,11 @@ const tileTwo = {
 			},
 			   {
 				"type": "alert",
-				"title": "Alert: confidential information. Not to be shared",
+				"title": "Attention : informations confidentielles. A ne pas partager",
 				"variant": "error",
 				"body": {
 					"type": "text",
-					"text": "click on the following url to either view or redirected to the document"
+					"text": "Les informations ci-dessous ne doivent pas être modifiées, partagées ou supprimées sans autorisation préalable."
 				}
 			},
 			{
@@ -271,6 +271,45 @@ const tileTwo = {
 			}
 		]
   };	
+	
+	 const tileThree = {
+    "type": "tile",
+    "content": [
+      // example progress bar component
+  {
+    "type": "heading",
+    "text": "Products purchased in last month"
+  },
+  {
+    "type": "progressBar",
+    "variant": "success",
+    "valueMax": 150,
+    "value": 50,
+    "title": "T-shirts",
+    "valueDescription": "50 out of 150",
+    "showPercentage": true
+  },
+  {
+    "type": "progressBar",
+    "variant": "warning",
+    "valueMax": 100,
+    "value": 20,
+    "title": "Bottles",
+    "valueDescription": "20 out of 100",
+    "showPercentage": true
+  },
+  {
+    "type": "progressBar",
+    "variant": "danger",
+    "valueMax": 150,
+    "value": 10,
+    "title": "Stickers",
+    "valueDescription": "10 out of 150",
+    "showPercentage": true
+  }
+	     ]
+  };
+	
 			
   try {
     const { data } = await axios.get("https://zenquotes.io/api/random");
@@ -307,8 +346,11 @@ const tileTwo = {
     ];
 
     sendResponse({
-      sections: [tileOne,tileTwo],
+      sections: [tileOne,tileTwo,tileThree],
     });
+	  
+	  
+	  
   } catch (error) {
     // "message" will create an error feedback banner when it catches an error
     sendResponse({
@@ -316,7 +358,7 @@ const tileTwo = {
         type: "ERROR",
         body: `Error: ${error.message}`,
       },
-      sections: [tileOne,tileTwo],
+      sections: [tileOne,tileTwo,tileThree],
     });
   }
 };
