@@ -117,11 +117,12 @@ const tileTwo = {
 					{
 						"type": "button",
 						"variant": "primary",
-						"text": "Open doc in iFrame"
+						"text": "Visualise document"
+						"url": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg"
 					},
 					{
 						"type": "button",
-						"text": "Redirect to link"
+						"text": "Go to link"
 					}
 				]
 			}
