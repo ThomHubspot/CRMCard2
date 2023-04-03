@@ -108,6 +108,9 @@ const tileTwo = {
 				"variant": "error",
 				"onClick": {
 					"type": "SERVERLESS_ACTION_HOOK",
+					"serverlessFunction": "exampleFunction",
+					"onClick": {
+					"type": "SERVERLESS_ACTION_HOOK",
 					"serverlessFunction": "exampleFunction"
 				}
 			},
@@ -117,14 +120,7 @@ const tileTwo = {
 					{
 						"type": "button",
 						"variant": "primary",
-						"text": "Visualise document",
-						"actions": [
-        {
-          "type": "IFRAME",
-          "width": 890,
-          "height": 748,
-          "uri": "https://www.dmv.pa.gov/REALID/PublishingImages/Pages/REAL-ID-Images/REAL%20ID-Compliant%20Non-Commercial%20Driver%27s%20License.jpg",
-        }
+						"text": "Visualise document"
 					},
 					{
 						"type": "button",
