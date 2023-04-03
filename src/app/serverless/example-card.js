@@ -62,9 +62,8 @@ exports.main = async (context = {}, sendResponse) => {
 					"type": "SERVERLESS_ACTION_HOOK",
 					"serverlessFunction": "exampleFunction"
 				}
-			}
-    ]
-  };
+			},
+   
 	{
 		"type": "tile",
 		"content": [
@@ -88,8 +87,10 @@ exports.main = async (context = {}, sendResponse) => {
 						}
 					}
 				]
-			};
-
+			},
+ ]
+  };
+			
   try {
     const { data } = await axios.get("https://zenquotes.io/api/random");
 
