@@ -18,22 +18,13 @@ exports.main = async (context = {}, sendResponse) => {
     "variant": "success",
     "valueMax": 100,
     "value": 35,
-    "title": "Success with value desc",
+    "title": "Progression du dossier",
     "valueDescription": "35 of 150",
     "showPercentage": true
   },
 			{
-				"type": "tag",
-				"text": "Waiting for validation",
-				"variant": "warning",
-				"onClick": {
-					"type": "SERVERLESS_ACTION_HOOK",
-					"serverlessFunction": "exampleFunction"
-				}
-			},
-			{
 				"type": "button",
-				"text": "Contact the doctor",
+				"text": "Actualiser",
 				"onClick": {
 					"type": "SERVERLESS_ACTION_HOOK",
 					"serverlessFunction": "exampleFunction"
@@ -58,10 +49,6 @@ const tileTwo = {
 					"type": "text",
 					"text": "click on the following url to either view or redirected to the document"
 				}
-			},
-			{
-				"type": "divider",
-				"distance": "small"
 			},
 			{
 				"type": "divider",
