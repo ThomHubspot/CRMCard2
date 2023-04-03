@@ -64,7 +64,7 @@ exports.main = async (context = {}, sendResponse) => {
 				}
 			}
     ]
-  },
+  };
 	{
 		"type": "tile",
 		"content": [
