@@ -308,9 +308,9 @@ const tileTwo = {
   },
 	    {
     "type": "progressBar",
-    "variant": "danger",
+    "variant": "success",
     "valueMax": 150,
-    "value": 10,
+    "value": 150,
     "title": "Réception du code de sécurité par SMS",
     "valueDescription": "150 out of 150",
     "showPercentage": true
@@ -319,7 +319,7 @@ const tileTwo = {
     "type": "progressBar",
     "variant": "danger",
     "valueMax": 150,
-    "value": 10,
+    "value": 0,
     "title": "Saisie du code",
     "valueDescription": "0 out of 150",
     "showPercentage": true
@@ -328,7 +328,7 @@ const tileTwo = {
     "type": "progressBar",
     "variant": "danger",
     "valueMax": 150,
-    "value": 10,
+    "value": 0,
     "title": "Document signé",
     "valueDescription": "0 out of 150",
     "showPercentage": true
